@@ -1,0 +1,20 @@
+student_model: Qwen/Qwen2.5-0.5B-Instruct
+teacher_model: microsoft/Phi-4-reasoning
+seed: 42
+max_length: 512
+batch_size: 1
+gradient_accumulation_steps: 8
+epochs: 3
+learning_rate: 5.0e-6
+alpha_ce: 0.7
+beta_kd: 0.3
+temperature: 1.5
+top_k: 50
+methods:
+  - base
+  - sft
+  - kd
+evaluation:
+  primary:
+    - HumanEval+
+    - MBPP
