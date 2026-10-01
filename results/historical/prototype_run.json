@@ -1,0 +1,17 @@
+{
+  "train_examples": 5,
+  "epochs": 3,
+  "total_student_parameters": 494032768,
+  "trainable_parameters": 195784192,
+  "trainable_percentage": 39.6,
+  "epoch_losses": [
+    0.8547,
+    0.8547,
+    0.8225
+  ],
+  "approximate_distillation_loss": 0.0001,
+  "notes": [
+    "NaN/Inf CE batches were skipped during training",
+    "No held-out benchmark was executed"
+  ]
+}
